@@ -1,0 +1,5 @@
+[
+    #foreach( $person in $body )
+    {"fullName":"$person["first_name"] $person["last_name"]"}#if( $foreach.hasNext),#end
+    #end
+]
